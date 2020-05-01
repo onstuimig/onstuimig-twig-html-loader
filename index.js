@@ -26,12 +26,14 @@ module.exports = function loader(source) {
     let data = query.data || {};
     const templateFile = require.resolve(this.resource);
     const options = {
+      base: query.base || null,
+      strict_variables: Boolean(query.strict_variables || false),
       path: templateFile,
-      data: source,
+      //data: source,
       async: false,
       debug: Boolean(query.debug || false),
       trace: Boolean(query.trace || false),
-      allowInlineIncludes: true,
+      //allowInlineIncludes: true,
       rethrow: true,
       namespaces: normalizeNamespaces(query.namespaces),
     };
