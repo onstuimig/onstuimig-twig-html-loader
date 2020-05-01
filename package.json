@@ -1,6 +1,6 @@
 {
-  "name": "twig-html-loader",
-  "version": "0.1.7",
+  "name": "onstuimig-twig-html-loader",
+  "version": "1.0.0",
   "description": "Twig to html loader for webpack",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/radiocity/twig-html-loader.git"
+    "url": "git+https://github.com/onstuimig/onstuimig-twig-html-loader.git"
   },
   "keywords": [
     "html",
@@ -18,12 +18,12 @@
     "compile",
     "plain"
   ],
-  "author": "Alexander A. <radiocity@bk.ru>",
+  "author": "Onstuimig",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/radiocity/twig-html-loader/issues"
+    "url": "https://github.com/onstuimig/onstuimig-twig-html-loader/issues"
   },
-  "homepage": "https://github.com/radiocity/twig-html-loader#readme",
+  "homepage": "https://github.com/onstuimig/onstuimig-twig-html-loader#readme",
   "files": [
     "index.js"
   ],
