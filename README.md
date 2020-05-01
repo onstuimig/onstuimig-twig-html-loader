@@ -1,13 +1,15 @@
-# twig-html-loader
+# onstuimig-twig-html-loader
 
 A loader for webpack that allows compiling [twig](https://twig.symfony.com/) templates into html string.
 
+> Based on [twig-html-loader](https://github.com/radiocity/twig-html-loader)
+
 ## Getting Started
 
-To begin, you'll need to install `twig-html-loader`:
+To begin, you'll need to install `onstuimig-twig-html-loader`:
 
 ```console
-npm install twig-html-loader --save-dev
+npm install onstuimig-twig-html-loader --save-dev
 ```
 
 Add twig template to your sources:
@@ -28,7 +30,7 @@ module.exports = {
       use: [
         'raw-loader',
         {
-          loader: 'twig-html-loader',
+          loader: 'onstuimig-twig-html-loader',
           options: {
             data: {}
           }
@@ -62,7 +64,7 @@ module.exports = {
       test: /\.twig$/,
       use: [
         'raw-loader',
-        'twig-html-loader'
+        'onstuimig-twig-html-loader'
       ]
     }
     // ...
@@ -80,6 +82,8 @@ module.exports = {
 
 |Name|Type|Default|Description|
 |--|--|-----|----------|
+|base|string|null|Set base path for includes|
+|strict_variables|boolean|false|Enables strict check on variables|
 |cache|boolean|false|Enables the Twigjs cache|
 |data|object or function(context)|{}|The data that is exposed in the templates. Function should return an object|
 |debug|boolean|false|Enables debug info logging|
@@ -102,7 +106,7 @@ module.exports = {
       use: [
         'raw-loader',
         {
-          loader: 'twig-html-loader',
+          loader: 'onstuimig-twig-html-loader',
           options: {
             data: (context) => {
               const data = path.join(__dirname, 'data.json');
@@ -133,7 +137,7 @@ module.exports = {
       use: [
         'raw-loader',
         {
-          loader: 'twig-html-loader',
+          loader: 'onstuimig-twig-html-loader',
           options: {
             namespaces: {
               'layouts': 'path/to/layouts',
@@ -180,7 +184,7 @@ module.exports = {
       use: [
         'raw-loader',
         {
-          loader: 'twig-html-loader',
+          loader: 'onstuimig-twig-html-loader',
           options: {
             functions: {
               repeat(value, times) {
